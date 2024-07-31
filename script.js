@@ -18,6 +18,8 @@ const collectEmployees = function() {
       lastName:lastName,
       salary:salary
     }
+    
+  
 
     employeesArray.push(demo); 
 
@@ -46,7 +48,7 @@ for (let i = 0; i < employeesArray.length; i++) {
 const getRandomEmployee = function(employeesArray) {
   // TODO: Select and display a random employee
   let random = Math.floor(Math.random() * employeesArray.length);
-  console.log(`Congratulations to ${employeesArray[random].firstName}, our random drawing winner!`);
+  console.log(`Congratulations to ${employeesArray[random].firstName} ${employeesArray[random].lastName}, our random drawing winner!`); 
 }
 
 /*
