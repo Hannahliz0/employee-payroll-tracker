@@ -33,7 +33,13 @@ const collectEmployees = function() {
 // Display the average salary 
 const displayAverageSalary = function(employeesArray) {
   // TODO: Calculate and display the average salary
-  //console.log(`The averageEmployee salery between our ${employeesArray.length} employees is $$ {averageSalary.toFixed(2)}`);
+let totalemployees = employeesArray.length;
+let averageSalaryWithTwoDecimals = 0;
+for (let i = 0; i < employeesArray.length; i++) {
+  averageSalaryWithTwoDecimals += parseInt(employeesArray[i].salary);
+  console.log (`The average salary between ${totalemployees} employees is ${averageSalaryWithTwoDecimals}`);
+}  
+
 }
 
 // Select a random employee
