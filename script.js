@@ -18,8 +18,6 @@ const collectEmployees = function() {
       lastName:lastName,
       salary:salary
     }
-    
-  
 
     employeesArray.push(demo); 
 
